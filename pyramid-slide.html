@@ -8,17 +8,22 @@
 </head>
 
 <body>
-    <select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select>
+    <select id="character">
+        <option value="@">@</option>
+        <option value="#">#</option>
+        <option value="X">X</option>
+        <option value="$">$</option>
+    </select>
     <form>
-        <input type="range" name="points" min="1" max="20">
+        <input type="range" name="points" min="1" max="20" id="slidervalue">
     </form>
-
-
+    <p id="showslider"></p>
+    <div id="pyramid">
+      <!-- Our pyramid will go inside here -->
+      <div id="construction">
+      </div>
+    </div>
+<script src="pyramid-slide.js"></script>
 </body>
 
 </html>
