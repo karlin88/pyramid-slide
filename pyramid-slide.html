@@ -2,20 +2,23 @@
 <html>
 
 <head>
-    <title>
-
-    </title>
+    <style>
+      #pyramid {
+        font-family: "Courier New", monospace;
+        line-height: 0;
+      }
+    </style>
 </head>
 
 <body>
-    <select id="character">
+    <select id="character" onchange="show_value2()">
         <option value="@">@</option>
         <option value="#">#</option>
         <option value="X">X</option>
         <option value="$">$</option>
     </select>
     <form>
-        <input type="range" name="points" min="1" max="20" id="slidervalue">
+        <input type="range" name="points" min="1" max="20" id = "slider" onchange="show_value2()">
     </form>
     <p id="showslider"></p>
     <div id="pyramid">
@@ -27,3 +30,6 @@
 </body>
 
 </html>
+
+<!-- <span id="slider_value2" style="color:red;font-weight:bold;"></span><br>
+<input type="range" min="0" max="1000" step="1" name="sld6" value=477 onchange="show_value2(this.value) "> 1,000  -->
